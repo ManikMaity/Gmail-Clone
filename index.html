@@ -15,7 +15,46 @@
 
 
 </head>
-<body class="h-screen bg-blue-400">
-    
+<body class="h-screen flex flex-col">
+
+    <!-- ------------------------- navbar section starts here ---------------------------------- -->
+    <div class="w-full">
+        <nav class="w-full py-2 flex px-4 text-gray-600 justify-between">
+            
+            <!-- navbar left content  -->
+            <div class="flex items-center w-[70%] justify-between gap-3">
+            <div class="flex gap-1 items-center">
+                <button class="h-10 w-10 grid place-content-center rounded-full hover:bg-gray-200"><i class="fa-solid fa-bars text-lg"></i></button>
+                <div>
+                    <img class="h-9" src="./assets/gmail-logo.png" alt="">
+                </div>
+            </div>
+
+            <div class=" hidden group md:flex h-full items-center rounded-full p-1 bg-blue-50 gap-2 w-[80%] max-w-2xl hover:drop-shadow-md hover:bg-white">
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="h-full focus:outline-none bg-blue-50 py-2 w-full group-hover:bg-white" type="text" name="saerch" id="saerch" placeholder="Search mail">
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i class="fa-solid fa-sliders"></i></button>
+            </div>
+            </div>
+             <!-- navbar left content end here -->
+
+              <!-- navbar right content  -->
+              <div class="flex items-center gap-2">
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i class="fa-regular fa-circle-question"></i></button>
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i class="fa-solid fa-gear"></i></button>
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i class="fa-solid fa-list-ul"></i></button>
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 w-7 overflow-hidden"><img src="./assets/my-pic.jpg" alt="manikmaity"></button>
+
+
+              </div>
+
+
+
+              <!-- navbar right content ends here -->
+
+        </nav>
+    </div>
+    <!-- ---------------------------- navbar section ends here -----------------------------------  -->
+
 </body>
 </html>
