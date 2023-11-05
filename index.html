@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,37 +16,47 @@
 
 
 </head>
+
 <body class="h-screen flex flex-col pb-2 bg-[#f6f9ff]">
 
     <!-- ------------------------- navbar section starts here ---------------------------------- -->
-        <nav class="w-full py-2 flex px-4 text-gray-600 justify-between">
-            
-            <!-- navbar left content  -->
-            <div class="flex items-center w-[70%] justify-between gap-3">
+    <nav class="w-full py-2 flex px-4 text-gray-600 justify-between">
+
+        <!-- navbar left content  -->
+        <div class="flex items-center w-[70%] justify-between gap-3">
             <div class="flex gap-1 items-center">
-                <button class="h-10 w-10 grid place-content-center rounded-full hover:bg-gray-200"><i class="fa-solid fa-bars text-lg"></i></button>
+                <button class="h-10 w-10 grid place-content-center rounded-full hover:bg-gray-200"><i
+                        class="fa-solid fa-bars text-lg"></i></button>
                 <div>
                     <img class="h-9" src="./assets/gmail-logo.png" alt="">
                 </div>
             </div>
 
-            <div class=" hidden group md:flex h-full items-center rounded-full p-1 bg-[#e5f1ff] gap-2 w-[80%] max-w-2xl hover:drop-shadow-md hover:bg-white">
-                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input class="h-full focus:outline-none bg-[#e5f1ff] py-2 w-full group-hover:bg-white" type="text" name="saerch" id="saerch" placeholder="Search mail">
-                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i class="fa-solid fa-sliders"></i></button>
+            <div
+                class=" hidden group md:flex h-full items-center rounded-full p-1 bg-[#e5f1ff] gap-2 w-[80%] max-w-2xl hover:drop-shadow-md hover:bg-white">
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="h-full focus:outline-none bg-[#e5f1ff] py-2 w-full group-hover:bg-white" type="text"
+                    name="saerch" id="saerch" placeholder="Search mail">
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+                        class="fa-solid fa-sliders"></i></button>
             </div>
-            </div>
-             <!-- navbar left content end here -->
+        </div>
+        <!-- navbar left content end here -->
 
-              <!-- navbar right content  -->
-              <div class="flex items-center gap-2">
-                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i class="fa-regular fa-circle-question"></i></button>
-                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i class="fa-solid fa-gear"></i></button>
-                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i class="fa-solid fa-list-ul"></i></button>
-                <button class="grid place-content-center rounded-full hover:bg-gray-200 w-7 overflow-hidden"><img src="./assets/my-pic.jpg" alt="manikmaity"></button>
-              </div>
-              <!-- navbar right content ends here -->
-        </nav>
+        <!-- navbar right content  -->
+        <div class="flex items-center gap-2">
+            <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+                    class="fa-regular fa-circle-question"></i></button>
+            <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+                    class="fa-solid fa-gear"></i></button>
+            <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+                    class="fa-solid fa-list-ul"></i></button>
+            <button class="grid place-content-center rounded-full hover:bg-gray-200 w-7 overflow-hidden"><img
+                    src="./assets/my-pic.jpg" alt="manikmaity"></button>
+        </div>
+        <!-- navbar right content ends here -->
+    </nav>
     <!-- ---------------------------- navbar section ends here -----------------------------------  -->
 
 
@@ -56,28 +67,89 @@
 
         <!-- ------------------------- gmail left sidebar starts here --------------------- -->
         <div class="self-start sticky top-0 col-span-2 h-full mr-2 hidden md:block">
-            <button class="flex gap-4 py-4 px-5 items-center bg-sky-200 ml-2 mt-2 rounded-2xl hover:drop-shadow-md"><i class="fa-solid fa-pencil text-xl"></i><p class="text-sm font-semibold">Compose</p></button>
+            <button class="flex gap-4 py-4 px-5 items-center bg-sky-200 ml-2 mt-2 rounded-2xl hover:drop-shadow-md"><i
+                    class="fa-solid fa-pencil text-xl"></i>
+                <p class="text-sm font-semibold">Compose</p>
+            </button>
 
             <ul class="w-full text-sm my-3">
-                <li class="w-full"><a class=" font-semibold w-full flex leading-none bg-blue-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2" href="#"><i class="fa-solid fa-inbox"></i><p class="flex w-full justify-between">Inbox <span>4,256</span></p></a></li>
-                <li class="w-full"><a class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2" href="#"><i class="fa-regular fa-star"></i><p class="flex w-full justify-between">Starred</p></a></li>
-                <li class="w-full"><a class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2" href="#"><i class="fa-regular fa-clock"></i><p class="flex w-full justify-between">Snoozed</p></a></li>
-                <li class="w-full"><a class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2" href="#"><i class="fa-regular fa-paper-plane"></i><p class="flex w-full justify-between">Sent</p></a></li>
-                <li class="w-full"><a class=" font-semibold w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2" href="#"><i class="fa-regular fa-file"></i><p class="flex w-full justify-between">Draft <span class="opacity-60">42</span></p></a></li>
-                <li class="w-full"><a class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2" href="#"><i class="fa-solid fa-angle-down"></i><p class="flex w-full justify-between">More</p></a></li>
+                <li class="w-full"><a
+                        class=" font-semibold w-full flex leading-none bg-blue-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+                        href="#"><i class="fa-solid fa-inbox"></i>
+                        <p class="flex w-full justify-between">Inbox <span>4,256</span></p>
+                    </a></li>
+                <li class="w-full"><a
+                        class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+                        href="#"><i class="fa-regular fa-star"></i>
+                        <p class="flex w-full justify-between">Starred</p>
+                    </a></li>
+                <li class="w-full"><a
+                        class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+                        href="#"><i class="fa-regular fa-clock"></i>
+                        <p class="flex w-full justify-between">Snoozed</p>
+                    </a></li>
+                <li class="w-full"><a
+                        class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+                        href="#"><i class="fa-regular fa-paper-plane"></i>
+                        <p class="flex w-full justify-between">Sent</p>
+                    </a></li>
+                <li class="w-full"><a
+                        class=" font-semibold w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+                        href="#"><i class="fa-regular fa-file"></i>
+                        <p class="flex w-full justify-between">Draft <span class="opacity-60">42</span></p>
+                    </a></li>
+                <li class="w-full"><a
+                        class="w-full flex leading-none hover:bg-gray-200 pl-6 py-2 gap-3 items-center rounded-e-full pr-2"
+                        href="#"><i class="fa-solid fa-angle-down"></i>
+                        <p class="flex w-full justify-between">More</p>
+                    </a></li>
             </ul>
             <div class="flex justify-between py-3 pl-6">
                 <p class="text-lg font-semibold">Labels</p>
-                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i class="fa-solid fa-plus"></i></button>
+                <button class="grid place-content-center rounded-full hover:bg-gray-200 p-2"><i
+                        class="fa-solid fa-plus"></i></button>
             </div>
-            
+
         </div>
-        <!-- ------------------------- gmail ends sidebar starts here --------------------- -->
+        <!-- ------------------------- gmail left sidebar ends here --------------------- -->
 
 
+        <!-- ------------------------- gmail right main contents start here -------------------------  -->
         <div class="sticky top-0 bg-white h-full col-span-10 md:col-span-8 rounded-2xl mx-2">
 
+            <!-- --------------------------sticky section start--------------------  -->
+            <div class="w-full sticky top-0 flex py-2 px-6 text-gray-600 text-[0.7rem] justify-between">
+
+                <!-- right  -->
+                <div class="flex gap-1">
+                    <div class="flex gap-1">
+                        <input class="py-auto px-2" type="checkbox" name="select" id="select">
+                        <button
+                            class="grid place-content-center rounded-full hover:bg-gray-200  text-gray-700 px-1 h-full"><i
+                                class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                    <button class="grid place-content-center rounded-full hover:bg-gray-200 p-3"><i
+                            class="fa-solid fa-rotate-right"></i></button>
+                    <button class="grid place-content-center rounded-full hover:bg-gray-200 py-3 px-4"><i
+                            class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+
+                <!-- left  -->
+                <div class="flex gap-1">
+                    <div class="flex items-center h-full rounded-md px-2 cursor-pointer hover:bg-gray-200">
+                        <p>1-50 of 4,814</p>
+                    </div>
+                    <button class="grid place-content-center rounded-full hover:bg-gray-200 p-3"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="grid place-content-center rounded-full hover:bg-gray-200 p-3"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+
+            </div>
+            <!-- --------------------------sticky section end --------------------  -->
+
         </div>
+        <!-- ------------------------- gmail right main contents ends here -------------------------  -->
+
 
 
 
@@ -85,4 +157,5 @@
     <!------------------------------- gmail main section ends here ------------------------------  -->
 
 </body>
+
 </html>
