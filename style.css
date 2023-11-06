@@ -536,8 +536,24 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
 .sticky{
   position: sticky;
+}
+
+.bottom-4{
+  bottom: 1rem;
+}
+
+.right-4{
+  right: 1rem;
 }
 
 .top-0{
@@ -606,10 +622,6 @@ video {
   height: 3rem;
 }
 
-.h-80{
-  height: 20rem;
-}
-
 .h-9{
   height: 2.25rem;
 }
@@ -620,30 +632,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.h-\[800px\]{
-  height: 800px;
-}
-
-.h-\[300px\]{
-  height: 300px;
-}
-
-.h-\[500px\]{
-  height: 500px;
-}
-
-.h-\[550px\]{
-  height: 550px;
-}
-
-.h-\[520px\]{
-  height: 520px;
-}
-
-.h-\[510px\]{
-  height: 510px;
 }
 
 .w-1\/5{
@@ -744,10 +732,6 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
-}
-
-.overflow-scroll{
-  overflow: scroll;
 }
 
 .overflow-x-hidden{
@@ -888,15 +872,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-7{
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
-.pb-2{
-  padding-bottom: 0.5rem;
-}
-
 .pl-6{
   padding-left: 1.5rem;
 }
@@ -983,6 +958,18 @@ video {
   opacity: 0.6;
 }
 
+.scrolable-width {
+  height: calc(100vh - 122px);
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #d0d0d0;
+}
+
 .hover\:bg-gray-200:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -1031,8 +1018,16 @@ video {
     display: grid;
   }
 
+  .md\:hidden{
+    display: none;
+  }
+
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:pb-2{
+    padding-bottom: 0.5rem;
   }
 }

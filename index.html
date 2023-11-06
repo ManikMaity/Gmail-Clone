@@ -17,7 +17,12 @@
 
 </head>
 
-<body class="h-screen flex flex-col pb-2 bg-[#f6f9ff]">
+<body class="h-screen flex flex-col md:pb-2 bg-[#f6f9ff] relative">
+
+    <button class="flex md:hidden gap-4 py-4 px-5 items-center bg-sky-200 ml-2 mt-2 rounded-2xl hover:drop-shadow-md absolute bottom-4 right-4"><i
+        class="fa-solid fa-pencil text-xl"></i>
+    <p class="text-sm font-semibold">Compose</p>
+</button>
 
     <!-- ------------------------- navbar section starts here ---------------------------------- -->
     <nav class="w-full py-2 flex px-4 text-gray-600 justify-between">
@@ -150,7 +155,7 @@
 
 
             <!-- ------------------------ Scrolable main section starts here ------------------------  -->
-            <div class="h-[510px] overflow-y-scroll overflow-x-hidden">
+            <div class="scrolable-width overflow-y-scroll overflow-x-hidden">
 
                 <!-- ----------------- Mail Catergory select Section start--------------------  -->
                 <div class="hidden md:flex h-12 text-sm font-medium leading-none text-gray-600 border-b border-gray-200">
